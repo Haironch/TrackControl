@@ -1,0 +1,31 @@
+name: Keep Render API awake
+
+# El plan gratuito de Render "duerme" el backend tras ~15 minutos sin tráfico
+# (la siguiente petición tarda 30-50s en responder mientras despierta). Este
+# workflow hace un ping a /api/health cada 10 minutos para evitar que llegue
+# a dormirse. No requiere ninguna cuenta ni configuración adicional: corre
+# dentro de este mismo repositorio de GitHub.
+#
+# Nota: GitHub desactiva automáticamente los workflows programados (cron) en
+# un repositorio tras 60 días sin actividad (sin commits/pushes). Si el
+# prototipo queda inactivo mucho tiempo, basta con un commit cualquiera (o
+# reactivarlo manualmente en la pestaña Actions) para que vuelva a correr.
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch: {} # permite lanzarlo a mano desde la pestaña Actions
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping API health endpoint
+        run: |
+          set -e
+          STATUS=$(curl -s -o /tmp/response.json -w "%{http_code}" --max-time 60 https://trackcontrol-api.onrender.com/api/health)
+          echo "HTTP status: $STATUS"
+          cat /tmp/response.json
+          if [ "$STATUS" != "200" ]; then
+            echo "::warning::La API respondió $STATUS en vez de 200 (puede estar despertando o caída)."
+          fi
