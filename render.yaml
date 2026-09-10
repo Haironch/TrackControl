@@ -3,9 +3,9 @@
 # Cómo usarlo:
 #   1. Sube este repositorio a GitHub (o GitLab).
 #   2. En Render: New > Blueprint > selecciona el repositorio > Apply.
-#   3. Render crea los dos servicios de abajo y los conecta automáticamente entre sí
-#      (la URL del API se inyecta en el frontend, y viceversa para CORS) mediante
-#      `fromService`, así que no hay que copiar URLs a mano.
+#   3. Render crea los dos servicios de abajo con las URLs esperadas: trackcontrol-api
+#      y trackcontrol-web. Si Render les asigna un sufijo distinto por conflicto de
+#      nombre, actualiza CORS_ORIGIN y VITE_API_URL más abajo con las URLs reales.
 #   4. La primera vez que "duerma" el servicio gratuito de la API (tras ~15 min sin
 #      tráfico), el próximo request tarda ~30-50s en despertar — normal en el free tier.
 #   5. Los datos viven en JSON dentro del propio contenedor de la API (sin disco
@@ -26,7 +26,10 @@ services:
     plan: free
     region: oregon
     rootDir: .
-    buildCommand: npm install && npm run build -w @trackcontrol/api
+    # --include=dev es imprescindible: NODE_ENV=production (abajo) hace que "npm install"
+    # omita devDependencies por defecto, y ahí vive esbuild (la herramienta que compila
+    # este backend). Sin --include=dev el build falla con "esbuild: not found".
+    buildCommand: npm install --include=dev && npm run build -w @trackcontrol/api
     startCommand: npm run start -w @trackcontrol/api
     healthCheckPath: /api/health
     autoDeploy: true
@@ -41,26 +44,24 @@ services:
         value: "true"
       - key: SHIFT_MOCK_DATES
         value: "true"
+      # Valor fijo (no fromService): en pruebas, el enlace automático entre servicios
+      # de Render no se resolvió en build. Si cambias el nombre del servicio web o su
+      # dominio, actualiza este valor a mano.
       - key: CORS_ORIGIN
-        fromService:
-          type: web
-          name: trackcontrol-web
-          property: host
+        value: https://trackcontrol-web.onrender.com
 
   # ---------- Frontend (React + Vite, sitio estático) ----------
   - type: web
     name: trackcontrol-web
     runtime: static
     rootDir: .
-    buildCommand: npm install && npm run build -w @trackcontrol/web
+    buildCommand: npm install --include=dev && npm run build -w @trackcontrol/web
     staticPublishPath: apps/web/dist
     autoDeploy: true
     envVars:
+      # Valor fijo apuntando directo al backend (ver nota sobre fromService arriba).
       - key: VITE_API_URL
-        fromService:
-          type: web
-          name: trackcontrol-api
-          property: host
+        value: https://trackcontrol-api.onrender.com/api
     routes:
       # Necesario para que las rutas de React Router (ej. /paquetes/123) no den 404
       # al recargar la página: todo lo que no sea un archivo real cae a index.html.
