@@ -1,0 +1,24 @@
+{
+  "name": "trackcontrol",
+  "private": true,
+  "version": "0.1.0",
+  "description": "TrackControl - Control, seguimiento y conciliación de envíos con paqueterías externas",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "concurrently -n api,web -c cyan,magenta \"npm run dev -w @trackcontrol/api\" \"npm run dev -w @trackcontrol/web\"",
+    "dev:api": "npm run dev -w @trackcontrol/api",
+    "dev:web": "npm run dev -w @trackcontrol/web",
+    "build": "npm run build -w @trackcontrol/api && npm run build -w @trackcontrol/web",
+    "seed": "npm run seed -w @trackcontrol/api",
+    "typecheck": "npm run typecheck -w @trackcontrol/api && npm run typecheck -w @trackcontrol/web"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

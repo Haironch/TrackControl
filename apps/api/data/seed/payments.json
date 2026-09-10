@@ -1,0 +1,101 @@
+[
+  {
+    "id": "pay_0000v6",
+    "settlementId": "stl_0000v5",
+    "method": "TRANSFERENCIA",
+    "reference": "DEP-147006",
+    "bankName": "BAM",
+    "amount": 1730,
+    "paidAt": "2026-08-24T16:59:00.000Z",
+    "createdAt": "2026-08-24T16:59:00.000Z",
+    "updatedAt": "2026-08-24T16:59:00.000Z"
+  },
+  {
+    "id": "pay_0000ve",
+    "settlementId": "stl_0000vd",
+    "method": "TRANSFERENCIA",
+    "reference": "DEP-148160",
+    "bankName": "Banrural",
+    "amount": 5330,
+    "paidAt": "2026-09-03T18:59:00.000Z",
+    "createdAt": "2026-09-03T18:59:00.000Z",
+    "updatedAt": "2026-09-03T18:59:00.000Z"
+  },
+  {
+    "id": "pay_0000vp",
+    "settlementId": "stl_0000vo",
+    "method": "DEPOSITO",
+    "reference": "TRF-963230",
+    "bankName": "BAM",
+    "amount": 2040,
+    "paidAt": "2026-08-21T19:18:00.000Z",
+    "createdAt": "2026-08-21T19:18:00.000Z",
+    "updatedAt": "2026-08-21T19:18:00.000Z"
+  },
+  {
+    "id": "pay_0000vx",
+    "settlementId": "stl_0000vw",
+    "method": "DEPOSITO",
+    "reference": "TRF-483244",
+    "bankName": "Banrural",
+    "amount": 2605,
+    "paidAt": "2026-09-01T01:23:00.000Z",
+    "createdAt": "2026-09-01T01:23:00.000Z",
+    "updatedAt": "2026-09-01T01:23:00.000Z"
+  },
+  {
+    "id": "pay_0000w5",
+    "settlementId": "stl_0000w4",
+    "method": "DEPOSITO",
+    "reference": "DEP-177695",
+    "bankName": "Banco Industrial",
+    "amount": 4040,
+    "paidAt": "2026-08-25T22:02:00.000Z",
+    "createdAt": "2026-08-25T22:02:00.000Z",
+    "updatedAt": "2026-08-25T22:02:00.000Z"
+  },
+  {
+    "id": "pay_0000wh",
+    "settlementId": "stl_0000wg",
+    "method": "TRANSFERENCIA",
+    "reference": "TRF-592798",
+    "bankName": "Banrural",
+    "amount": 4325,
+    "paidAt": "2026-09-02T17:59:00.000Z",
+    "createdAt": "2026-09-02T17:59:00.000Z",
+    "updatedAt": "2026-09-02T17:59:00.000Z"
+  },
+  {
+    "id": "pay_0000wt",
+    "settlementId": "stl_0000ws",
+    "method": "TRANSFERENCIA",
+    "reference": "DEP-888009",
+    "bankName": "BAM",
+    "amount": 1510,
+    "paidAt": "2026-08-24T19:09:00.000Z",
+    "createdAt": "2026-08-24T19:09:00.000Z",
+    "updatedAt": "2026-08-24T19:09:00.000Z"
+  },
+  {
+    "id": "pay_0000x1",
+    "settlementId": "stl_0000x0",
+    "method": "DEPOSITO",
+    "reference": "DEP-924808",
+    "bankName": "Banrural",
+    "amount": 2580,
+    "paidAt": "2026-09-01T23:08:00.000Z",
+    "createdAt": "2026-09-01T23:08:00.000Z",
+    "updatedAt": "2026-09-01T23:08:00.000Z"
+  },
+  {
+    "id": "pay_0000x9",
+    "settlementId": "stl_0000x8",
+    "method": "TRANSFERENCIA",
+    "reference": "TRF-714949",
+    "bankName": "BAM",
+    "amount": 1695,
+    "paidAt": "2026-08-30T18:25:00.000Z",
+    "createdAt": "2026-08-30T18:25:00.000Z",
+    "updatedAt": "2026-08-30T18:25:00.000Z"
+  }
+]

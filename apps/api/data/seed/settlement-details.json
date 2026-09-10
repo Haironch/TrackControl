@@ -1,0 +1,281 @@
+[
+  {
+    "id": "std_0000v7",
+    "settlementId": "stl_0000v5",
+    "shipmentId": "shp_0000l9",
+    "amountCollected": 750,
+    "amountSettled": 750,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000v9",
+    "settlementId": "stl_0000v5",
+    "shipmentId": "shp_0000cv",
+    "amountCollected": 605,
+    "amountSettled": 605,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000vb",
+    "settlementId": "stl_0000v5",
+    "shipmentId": "shp_0000mu",
+    "amountCollected": 375,
+    "amountSettled": 375,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000vf",
+    "settlementId": "stl_0000vd",
+    "shipmentId": "shp_0000k4",
+    "amountCollected": 2630,
+    "amountSettled": 2630,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000vh",
+    "settlementId": "stl_0000vd",
+    "shipmentId": "shp_0000gs",
+    "amountCollected": 2245,
+    "amountSettled": 2245,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000vj",
+    "settlementId": "stl_0000vd",
+    "shipmentId": "shp_0000re",
+    "amountCollected": 455,
+    "amountSettled": 455,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000vm",
+    "settlementId": "stl_0000vl",
+    "shipmentId": "shp_0000iu",
+    "amountCollected": 680,
+    "amountSettled": 680,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000vq",
+    "settlementId": "stl_0000vo",
+    "shipmentId": "shp_0000he",
+    "amountCollected": 600,
+    "amountSettled": 600,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000vs",
+    "settlementId": "stl_0000vo",
+    "shipmentId": "shp_0000kz",
+    "amountCollected": 460,
+    "amountSettled": 460,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000vu",
+    "settlementId": "stl_0000vo",
+    "shipmentId": "shp_0000f2",
+    "amountCollected": 980,
+    "amountSettled": 980,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000vy",
+    "settlementId": "stl_0000vw",
+    "shipmentId": "shp_0000gi",
+    "amountCollected": 455,
+    "amountSettled": 455,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000w0",
+    "settlementId": "stl_0000vw",
+    "shipmentId": "shp_0000cl",
+    "amountCollected": 1045,
+    "amountSettled": 1045,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000w2",
+    "settlementId": "stl_0000vw",
+    "shipmentId": "shp_0000tm",
+    "amountCollected": 1105,
+    "amountSettled": 1105,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000w6",
+    "settlementId": "stl_0000w4",
+    "shipmentId": "shp_0000ma",
+    "amountCollected": 805,
+    "amountSettled": 781.78,
+    "adjustment": -23.22,
+    "note": null
+  },
+  {
+    "id": "std_0000w8",
+    "settlementId": "stl_0000w4",
+    "shipmentId": "shp_0000fd",
+    "amountCollected": 430,
+    "amountSettled": 417.6,
+    "adjustment": -12.4,
+    "note": null
+  },
+  {
+    "id": "std_0000wa",
+    "settlementId": "stl_0000w4",
+    "shipmentId": "shp_0000qv",
+    "amountCollected": 1320,
+    "amountSettled": 1281.92,
+    "adjustment": -38.08,
+    "note": null
+  },
+  {
+    "id": "std_0000wc",
+    "settlementId": "stl_0000w4",
+    "shipmentId": "shp_0000jv",
+    "amountCollected": 640,
+    "amountSettled": 621.54,
+    "adjustment": -18.46,
+    "note": null
+  },
+  {
+    "id": "std_0000we",
+    "settlementId": "stl_0000w4",
+    "shipmentId": "shp_0000ij",
+    "amountCollected": 965,
+    "amountSettled": 937.16,
+    "adjustment": -27.84,
+    "note": null
+  },
+  {
+    "id": "std_0000wi",
+    "settlementId": "stl_0000wg",
+    "shipmentId": "shp_0000sq",
+    "amountCollected": 1170,
+    "amountSettled": 1170,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000wk",
+    "settlementId": "stl_0000wg",
+    "shipmentId": "shp_0000de",
+    "amountCollected": 1125,
+    "amountSettled": 1125,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000wm",
+    "settlementId": "stl_0000wg",
+    "shipmentId": "shp_0000n4",
+    "amountCollected": 610,
+    "amountSettled": 610,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000wo",
+    "settlementId": "stl_0000wg",
+    "shipmentId": "shp_0000dy",
+    "amountCollected": 640,
+    "amountSettled": 640,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000wq",
+    "settlementId": "stl_0000wg",
+    "shipmentId": "shp_0000s6",
+    "amountCollected": 780,
+    "amountSettled": 780,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000wu",
+    "settlementId": "stl_0000ws",
+    "shipmentId": "shp_0000ej",
+    "amountCollected": 310,
+    "amountSettled": 310,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000ww",
+    "settlementId": "stl_0000ws",
+    "shipmentId": "shp_0000g7",
+    "amountCollected": 775,
+    "amountSettled": 775,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000wy",
+    "settlementId": "stl_0000ws",
+    "shipmentId": "shp_0000j3",
+    "amountCollected": 425,
+    "amountSettled": 425,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000x2",
+    "settlementId": "stl_0000x0",
+    "shipmentId": "shp_0000fy",
+    "amountCollected": 210,
+    "amountSettled": 210,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000x4",
+    "settlementId": "stl_0000x0",
+    "shipmentId": "shp_0000hz",
+    "amountCollected": 1645,
+    "amountSettled": 1645,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000x6",
+    "settlementId": "stl_0000x0",
+    "shipmentId": "shp_0000uu",
+    "amountCollected": 725,
+    "amountSettled": 725,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000xa",
+    "settlementId": "stl_0000x8",
+    "shipmentId": "shp_0000hq",
+    "amountCollected": 520,
+    "amountSettled": 520,
+    "adjustment": 0,
+    "note": null
+  },
+  {
+    "id": "std_0000xc",
+    "settlementId": "stl_0000x8",
+    "shipmentId": "shp_0000qa",
+    "amountCollected": 1175,
+    "amountSettled": 1175,
+    "adjustment": 0,
+    "note": null
+  }
+]

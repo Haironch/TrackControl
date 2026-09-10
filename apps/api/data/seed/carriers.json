@@ -1,0 +1,82 @@
+[
+  {
+    "id": "car_cargoexpress",
+    "name": "Cargo Express",
+    "code": "CEX",
+    "phone": "+502 2379-4500",
+    "contactName": "Mynor Castañeda",
+    "email": "operaciones@cargoexpress.gt",
+    "active": true,
+    "color": "#0ea5e9",
+    "integration": {
+      "provider": null,
+      "apiKey": null,
+      "webhookUrl": null,
+      "trackingUrlTemplate": "https://cargoexpress.gt/track/{guide}"
+    },
+    "createdAt": "2026-05-13T15:26:45.000Z",
+    "updatedAt": "2026-05-13T15:26:45.000Z"
+  },
+  {
+    "id": "car_forza",
+    "name": "Forza",
+    "code": "FRZ",
+    "phone": "+502 2314-1200",
+    "contactName": "Patricia Aguilar",
+    "email": "clientes@forza.com.gt",
+    "active": true,
+    "color": "#f97316",
+    "integration": {
+      "provider": null,
+      "apiKey": null,
+      "webhookUrl": null,
+      "trackingUrlTemplate": "https://forza.com.gt/rastreo/{guide}"
+    },
+    "createdAt": "2026-05-13T15:24:53.000Z",
+    "updatedAt": "2026-05-13T15:24:53.000Z"
+  },
+  {
+    "id": "car_guatex",
+    "name": "Guatex",
+    "code": "GTX",
+    "phone": "+502 2379-8000",
+    "contactName": "Rolando Vásquez",
+    "email": "servicio@guatex.com",
+    "active": true,
+    "color": "#ef4444",
+    "integration": {
+      "provider": null,
+      "apiKey": null,
+      "webhookUrl": null,
+      "trackingUrlTemplate": "https://guatex.com/rastreo?guia={guide}"
+    },
+    "createdAt": "2026-05-13T15:44:14.000Z",
+    "updatedAt": "2026-05-13T15:44:14.000Z"
+  },
+  {
+    "id": "car_cargoexpreso",
+    "name": "Cargo Expreso",
+    "code": "CXP",
+    "phone": "+502 2413-9000",
+    "contactName": "Silvia Monroy",
+    "email": "ventas@cargoexpreso.com",
+    "active": true,
+    "color": "#8b5cf6",
+    "integration": null,
+    "createdAt": "2026-05-13T15:46:25.000Z",
+    "updatedAt": "2026-05-13T15:46:25.000Z"
+  },
+  {
+    "id": "car_interna",
+    "name": "Mensajería interna",
+    "code": "INT",
+    "phone": "+502 5512-3344",
+    "contactName": "Luis Pérez",
+    "email": null,
+    "active": true,
+    "color": "#10b981",
+    "integration": null,
+    "createdAt": "2026-05-13T15:49:06.000Z",
+    "updatedAt": "2026-05-13T15:49:06.000Z"
+  }
+]

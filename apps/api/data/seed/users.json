@@ -1,0 +1,62 @@
+[
+  {
+    "id": "usr_admin",
+    "name": "Andrea López",
+    "email": "andrea@trackcontrol.gt",
+    "role": "ADMINISTRADOR",
+    "active": true,
+    "avatarColor": "#7c3aed",
+    "createdAt": "2026-05-13T15:11:06.000Z",
+    "updatedAt": "2026-05-13T15:11:06.000Z"
+  },
+  {
+    "id": "usr_operador",
+    "name": "Carlos Méndez",
+    "email": "carlos@trackcontrol.gt",
+    "role": "OPERADOR",
+    "active": true,
+    "avatarColor": "#0284c7",
+    "createdAt": "2026-05-23T15:58:54.000Z",
+    "updatedAt": "2026-05-23T15:58:54.000Z"
+  },
+  {
+    "id": "usr_bodega",
+    "name": "Luis Pérez",
+    "email": "luis@trackcontrol.gt",
+    "role": "BODEGA",
+    "active": true,
+    "avatarColor": "#d97706",
+    "createdAt": "2026-06-02T15:06:03.000Z",
+    "updatedAt": "2026-06-02T15:06:03.000Z"
+  },
+  {
+    "id": "usr_conta",
+    "name": "María García",
+    "email": "maria@trackcontrol.gt",
+    "role": "CONTABILIDAD",
+    "active": true,
+    "avatarColor": "#059669",
+    "createdAt": "2026-06-07T15:53:37.000Z",
+    "updatedAt": "2026-06-07T15:53:37.000Z"
+  },
+  {
+    "id": "usr_super",
+    "name": "Jorge Ramírez",
+    "email": "jorge@trackcontrol.gt",
+    "role": "SUPERVISOR",
+    "active": true,
+    "avatarColor": "#475569",
+    "createdAt": "2026-06-22T15:17:28.000Z",
+    "updatedAt": "2026-06-22T15:17:28.000Z"
+  },
+  {
+    "id": "usr_inactivo",
+    "name": "Sandra Ruiz",
+    "email": "sandra@trackcontrol.gt",
+    "role": "OPERADOR",
+    "active": false,
+    "avatarColor": "#94a3b8",
+    "createdAt": "2026-02-22T15:51:09.000Z",
+    "updatedAt": "2026-02-22T15:51:09.000Z"
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "prd_000001",
+    "sku": "TEN-001",
+    "name": "Tenis deportivos Runner",
+    "price": 425,
+    "active": true,
+    "createdAt": "2026-06-12T15:57:29.000Z",
+    "updatedAt": "2026-06-12T15:57:29.000Z"
+  },
+  {
+    "id": "prd_000002",
+    "sku": "BLU-014",
+    "name": "Blusa casual manga larga",
+    "price": 165,
+    "active": true,
+    "createdAt": "2026-06-12T15:02:45.000Z",
+    "updatedAt": "2026-06-12T15:02:45.000Z"
+  },
+  {
+    "id": "prd_000003",
+    "sku": "PER-007",
+    "name": "Perfume Essence 100ml",
+    "price": 380,
+    "active": true,
+    "createdAt": "2026-06-12T15:19:49.000Z",
+    "updatedAt": "2026-06-12T15:19:49.000Z"
+  },
+  {
+    "id": "prd_000004",
+    "sku": "AUD-021",
+    "name": "Audífonos inalámbricos Pro",
+    "price": 295,
+    "active": true,
+    "createdAt": "2026-06-12T15:01:14.000Z",
+    "updatedAt": "2026-06-12T15:01:14.000Z"
+  },
+  {
+    "id": "prd_000005",
+    "sku": "REL-003",
+    "name": "Reloj inteligente Fit",
+    "price": 650,
+    "active": true,
+    "createdAt": "2026-06-12T15:44:27.000Z",
+    "updatedAt": "2026-06-12T15:44:27.000Z"
+  },
+  {
+    "id": "prd_000006",
+    "sku": "MOC-002",
+    "name": "Mochila urbana impermeable",
+    "price": 245,
+    "active": true,
+    "createdAt": "2026-06-12T15:13:01.000Z",
+    "updatedAt": "2026-06-12T15:13:01.000Z"
+  },
+  {
+    "id": "prd_000007",
+    "sku": "CAR-009",
+    "name": "Cargador rápido 65W",
+    "price": 185,
+    "active": true,
+    "createdAt": "2026-06-12T15:19:19.000Z",
+    "updatedAt": "2026-06-12T15:19:19.000Z"
+  },
+  {
+    "id": "prd_000008",
+    "sku": "FUN-011",
+    "name": "Funda celular reforzada",
+    "price": 75,
+    "active": true,
+    "createdAt": "2026-06-12T15:33:22.000Z",
+    "updatedAt": "2026-06-12T15:33:22.000Z"
+  },
+  {
+    "id": "prd_000009",
+    "sku": "LEN-004",
+    "name": "Lentes de sol polarizados",
+    "price": 210,
+    "active": true,
+    "createdAt": "2026-06-12T15:55:35.000Z",
+    "updatedAt": "2026-06-12T15:55:35.000Z"
+  },
+  {
+    "id": "prd_00000a",
+    "sku": "PAN-016",
+    "name": "Pantalón jeans slim",
+    "price": 240,
+    "active": true,
+    "createdAt": "2026-06-12T15:48:04.000Z",
+    "updatedAt": "2026-06-12T15:48:04.000Z"
+  },
+  {
+    "id": "prd_00000b",
+    "sku": "JUG-005",
+    "name": "Set de juguetes didácticos",
+    "price": 320,
+    "active": true,
+    "createdAt": "2026-06-12T15:20:25.000Z",
+    "updatedAt": "2026-06-12T15:20:25.000Z"
+  },
+  {
+    "id": "prd_00000c",
+    "sku": "PLA-008",
+    "name": "Plancha de cabello cerámica",
+    "price": 275,
+    "active": true,
+    "createdAt": "2026-06-12T15:17:05.000Z",
+    "updatedAt": "2026-06-12T15:17:05.000Z"
+  },
+  {
+    "id": "prd_00000d",
+    "sku": "BOC-012",
+    "name": "Bocina bluetooth portátil",
+    "price": 340,
+    "active": true,
+    "createdAt": "2026-06-12T15:54:49.000Z",
+    "updatedAt": "2026-06-12T15:54:49.000Z"
+  },
+  {
+    "id": "prd_00000e",
+    "sku": "KIT-006",
+    "name": "Kit de skincare (5 piezas)",
+    "price": 445,
+    "active": true,
+    "createdAt": "2026-06-12T15:13:50.000Z",
+    "updatedAt": "2026-06-12T15:13:50.000Z"
+  },
+  {
+    "id": "prd_00000f",
+    "sku": "TEC-010",
+    "name": "Teclado mecánico compacto",
+    "price": 520,
+    "active": true,
+    "createdAt": "2026-06-12T15:05:04.000Z",
+    "updatedAt": "2026-06-12T15:05:04.000Z"
+  },
+  {
+    "id": "prd_00000g",
+    "sku": "LAM-013",
+    "name": "Lámpara LED de escritorio",
+    "price": 155,
+    "active": true,
+    "createdAt": "2026-06-12T15:30:34.000Z",
+    "updatedAt": "2026-06-12T15:30:34.000Z"
+  }
+]

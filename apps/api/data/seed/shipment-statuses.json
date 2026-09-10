@@ -1,0 +1,206 @@
+[
+  {
+    "id": "NUEVO",
+    "code": "NUEVO",
+    "label": "Nuevo",
+    "description": "Envío registrado, pendiente de preparar.",
+    "category": "PENDING",
+    "color": "slate",
+    "order": 10,
+    "isFinal": false,
+    "nextStatuses": [
+      "PREPARADO",
+      "ENTREGADO_A_PAQUETERIA"
+    ],
+    "quickActionLabel": null
+  },
+  {
+    "id": "PREPARADO",
+    "code": "PREPARADO",
+    "label": "Preparado",
+    "description": "Empacado y listo para salir de bodega.",
+    "category": "PENDING",
+    "color": "blue",
+    "order": 20,
+    "isFinal": false,
+    "nextStatuses": [
+      "ENTREGADO_A_PAQUETERIA"
+    ],
+    "quickActionLabel": "Marcar como preparado"
+  },
+  {
+    "id": "ENTREGADO_A_PAQUETERIA",
+    "code": "ENTREGADO_A_PAQUETERIA",
+    "label": "Entregado a paquetería",
+    "description": "La paquetería recibió el paquete.",
+    "category": "IN_TRANSIT",
+    "color": "indigo",
+    "order": 30,
+    "isFinal": false,
+    "nextStatuses": [
+      "EN_TRANSITO",
+      "INCIDENCIA"
+    ],
+    "quickActionLabel": "Registrar salida a paquetería"
+  },
+  {
+    "id": "EN_TRANSITO",
+    "code": "EN_TRANSITO",
+    "label": "En tránsito",
+    "description": "El paquete viaja hacia el destino.",
+    "category": "IN_TRANSIT",
+    "color": "sky",
+    "order": 40,
+    "isFinal": false,
+    "nextStatuses": [
+      "EN_RUTA",
+      "CLIENTE_NO_RECIBIO",
+      "RECHAZADO",
+      "INCIDENCIA"
+    ],
+    "quickActionLabel": null
+  },
+  {
+    "id": "EN_RUTA",
+    "code": "EN_RUTA",
+    "label": "En ruta de entrega",
+    "description": "El repartidor lo lleva al cliente.",
+    "category": "IN_TRANSIT",
+    "color": "cyan",
+    "order": 50,
+    "isFinal": false,
+    "nextStatuses": [
+      "ENTREGADO",
+      "CLIENTE_NO_RECIBIO",
+      "RECHAZADO",
+      "INCIDENCIA"
+    ],
+    "quickActionLabel": null
+  },
+  {
+    "id": "ENTREGADO",
+    "code": "ENTREGADO",
+    "label": "Entregado",
+    "description": "Entregado al cliente final.",
+    "category": "DELIVERED",
+    "color": "emerald",
+    "order": 60,
+    "isFinal": true,
+    "nextStatuses": [
+      "INCIDENCIA"
+    ],
+    "quickActionLabel": "Marcar como entregado"
+  },
+  {
+    "id": "CLIENTE_NO_RECIBIO",
+    "code": "CLIENTE_NO_RECIBIO",
+    "label": "Cliente no recibió",
+    "description": "No se encontró al cliente en el primer intento.",
+    "category": "IN_TRANSIT",
+    "color": "amber",
+    "order": 70,
+    "isFinal": false,
+    "nextStatuses": [
+      "REINTENTO",
+      "RECHAZADO",
+      "INCIDENCIA"
+    ],
+    "quickActionLabel": null
+  },
+  {
+    "id": "REINTENTO",
+    "code": "REINTENTO",
+    "label": "Reintento",
+    "description": "Programado un nuevo intento de entrega.",
+    "category": "IN_TRANSIT",
+    "color": "orange",
+    "order": 80,
+    "isFinal": false,
+    "nextStatuses": [
+      "EN_RUTA",
+      "ENTREGADO",
+      "CLIENTE_NO_RECIBIO",
+      "RECHAZADO"
+    ],
+    "quickActionLabel": "Programar reintento"
+  },
+  {
+    "id": "RECHAZADO",
+    "code": "RECHAZADO",
+    "label": "Rechazado",
+    "description": "El cliente rechazó el paquete.",
+    "category": "RETURNING",
+    "color": "red",
+    "order": 90,
+    "isFinal": false,
+    "nextStatuses": [
+      "EN_RETORNO",
+      "INCIDENCIA"
+    ],
+    "quickActionLabel": "Registrar rechazo"
+  },
+  {
+    "id": "EN_RETORNO",
+    "code": "EN_RETORNO",
+    "label": "En retorno",
+    "description": "La paquetería devuelve el paquete a la empresa.",
+    "category": "RETURNING",
+    "color": "rose",
+    "order": 100,
+    "isFinal": false,
+    "nextStatuses": [
+      "RECIBIDO_EN_BODEGA",
+      "INCIDENCIA"
+    ],
+    "quickActionLabel": "Registrar devolución"
+  },
+  {
+    "id": "RECIBIDO_EN_BODEGA",
+    "code": "RECIBIDO_EN_BODEGA",
+    "label": "Recibido en bodega",
+    "description": "El paquete devuelto ya está de regreso en la empresa.",
+    "category": "RETURNED",
+    "color": "fuchsia",
+    "order": 110,
+    "isFinal": true,
+    "nextStatuses": [],
+    "quickActionLabel": "Confirmar recepción en bodega"
+  },
+  {
+    "id": "INCIDENCIA",
+    "code": "INCIDENCIA",
+    "label": "Incidencia",
+    "description": "Existe un problema que requiere revisión.",
+    "category": "INCIDENT",
+    "color": "yellow",
+    "order": 120,
+    "isFinal": false,
+    "nextStatuses": [
+      "EN_ESPERA",
+      "EN_TRANSITO",
+      "EN_RUTA",
+      "ENTREGADO",
+      "EN_RETORNO",
+      "RECHAZADO"
+    ],
+    "quickActionLabel": "Registrar incidencia"
+  },
+  {
+    "id": "EN_ESPERA",
+    "code": "EN_ESPERA",
+    "label": "En espera",
+    "description": "Detenido hasta resolver la incidencia.",
+    "category": "INCIDENT",
+    "color": "stone",
+    "order": 130,
+    "isFinal": false,
+    "nextStatuses": [
+      "EN_TRANSITO",
+      "EN_RUTA",
+      "ENTREGADO",
+      "EN_RETORNO",
+      "RECHAZADO"
+    ],
+    "quickActionLabel": null
+  }
+]
