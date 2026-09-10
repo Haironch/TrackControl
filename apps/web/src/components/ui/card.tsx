@@ -2,7 +2,11 @@ import * as React from 'react';
 import { cn } from '@/lib/utils';
 
 export const Card = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn('rounded-xl border border-slate-200 bg-white shadow-card', className)} {...props} />
+  // min-w-0: los elementos de un grid/flex usan min-width:auto por defecto, lo que les
+  // impide encogerse por debajo del ancho de su contenido (típico con gráficas Recharts,
+  // que fuerzan un ancho mínimo). Sin esto, las tarjetas se salen del track del grid en
+  // pantallas angostas aunque el contenedor sí tenga espacio suficiente.
+  <div ref={ref} className={cn('min-w-0 rounded-xl border border-slate-200 bg-white shadow-card', className)} {...props} />
 ));
 Card.displayName = 'Card';
 

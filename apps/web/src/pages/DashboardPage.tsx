@@ -134,12 +134,12 @@ export function DashboardPage() {
       {/* Gráficas */}
       <section className="grid gap-4 xl:grid-cols-3">
         <Card className="xl:col-span-2">
-          <CardHeader className="flex-row items-start justify-between">
+          <CardHeader className="flex-col items-start gap-3 sm:flex-row sm:items-start sm:justify-between">
             <div>
               <CardTitle>Envíos y entregas por día</CardTitle>
               <CardDescription>Paquetes que salieron a paquetería vs. entregados al cliente.</CardDescription>
             </div>
-            <Tabs value={days} onChange={setDays} items={[{ value: '14', label: '14 días' }, { value: '30', label: '30 días' }, { value: '60', label: '60 días' }]} />
+            <Tabs value={days} onChange={setDays} items={[{ value: '14', label: '14 días' }, { value: '30', label: '30 días' }, { value: '60', label: '60 días' }]} className="shrink-0" />
           </CardHeader>
           <CardContent>{stats.data ? <DailyChart data={stats.data.daily} /> : <Skeleton className="h-[260px]" />}</CardContent>
         </Card>
